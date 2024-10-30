@@ -2,7 +2,6 @@
 import pywhatkit
 
 def send_messages(content):
-    # idea to send a message to the person who fill the form passing some instructions
     try:
         message = 'Hello, I am sick today \nName: {0}\nRoom: {1} \nHouse: {2}\nAppointment: {3} \nHelp: {4}'.format(content['name'], content['room'], content['house'], content['appointment_situation'], content['help'])
         waiting_time_to_send = 15
